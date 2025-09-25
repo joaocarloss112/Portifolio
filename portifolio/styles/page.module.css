@@ -1,0 +1,109 @@
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  scroll-behavior: smooth;
+  background: #f9f9f9;
+  color: #333;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #111;
+  color: white;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 15px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+}
+
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: row;   /* coloca lado a lado */
+  justify-content: center; /* centraliza no eixo horizontal */
+  align-items: center;  /* centraliza no eixo vertical */
+  gap: 2rem;            /* espaço entre imagem e texto */
+  background: linear-gradient(to bottom, #1e1e1e, #333);
+  color: white;
+  padding: 0 5%;        /* dá respiro nas laterais */
+}
+.profile {
+  border-radius: 12px; /* você pode manter redondo ou quadrado */
+  max-width: 100%;
+  height: auto;
+}
+
+.footer {
+  background: #111;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+.textoNome {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* empurra pro topo */
+  align-items: center;;     /* opcional: alinha à esquerda */
+  gap: 2rem; /* espaço entre h1 e p */
+  height: 70%; /* ocupa altura da seção hero */
+  padding-top: 50px; /* ajusta o "quanto acima" vai ficar */
+}
+.textoNome p {
+  font-size: 1.2rem;  /* aumenta a fonte */
+  line-height: 1.6;   /* deixa mais espaçado e legível */
+  color: #fff;       
+}
+
+.contact,
+.projetos {
+  padding: 60px 20px;
+  text-align: center;
+}
+.textAndSkillsContainer {
+  display: flex;
+  flex-direction: column; 
+  align-items:center;
+}
+.habilidadesContainer {
+  width: 100%;
+  text-align: center; 
+}
+
+.introContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap; /* Em telas pequenas, o texto vai para baixo da foto */
+}
+
+/* A "caixa" que alinha as tags de habilidade */
+.habilidadesGrid {
+  display: flex;       /* Coloca as tags uma ao lado da outra */
+  justify-content: center; /* Centraliza as tags */
+  gap: 15px;           /* Espaço entre cada tag */
+  margin-top: 20px;    /* Espaço entre o título "Habilidades" e as tags */
+}
+
+/* O estilo de cada bloquinho/tag de habilidade */
+.habilidadeTag {
+  background-color: #ffffff;    /* Um cinza um pouco mais claro que o fundo */
+  color: #000000;               /* Cor do texto */
+  padding: 8px 16px;         /* Espaçamento interno (para a tag não ficar grudada no texto) */
+  border-radius: 5px;        /* Deixa as bordas levemente arredondadas */
+  border: 1px solid #f8f7f7;    /* Uma borda sutil para dar um pequeno destaque */
+  font-size: 1rem;           /* Tamanho do texto */
+}
+
+/* Efeito simples ao passar o mouse, só para mostrar que é clicável (ou interativo) */
+.habilidadeTag:hover {
+  background-color: #c72525; /* Escurece um pouco o fundo */
+}
