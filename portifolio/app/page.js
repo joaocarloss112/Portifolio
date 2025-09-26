@@ -116,7 +116,7 @@ export default function Home() {
           <div className={styles.contactContainer}>
             <div className={styles.contactItem}>
               <img src="/maildotru.svg" alt="Email" className={styles.icon}/>
-              <a href="mailto:joaocarloss1@hotmail.com">joaocarloss1@hotmail.com</a>
+              <a href="mailto:joaocarloss11@hotmail.com">joaocarloss11@hotmail.com</a>
             </div>
             <div className={styles.contactItem}>
               <img src="/github.svg" alt="GitHub" className={styles.icon}/>
