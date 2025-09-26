@@ -4,14 +4,14 @@ body {
   font-family: Arial, sans-serif;
   scroll-behavior: smooth;
   background: #f9f9f9;
-  color: #333;
+  color: #000000;
 }
 
 .navbar {
   position: fixed;
   top: 0;
   width: 100%;
-  background: #111;
+  background: #ff0000;
   color: white;
   display: flex;
   justify-content: center;
@@ -27,38 +27,32 @@ body {
 .hero {
   height: 100vh;
   display: flex;
-  flex-direction: row;   /* coloca lado a lado */
-  justify-content: center; /* centraliza no eixo horizontal */
-  align-items: center;  /* centraliza no eixo vertical */
-  gap: 2rem;            /* espaço entre imagem e texto */
-  background: linear-gradient(to bottom, #1e1e1e, #333);
+  flex-direction: row;   
+  justify-content: center; 
+  align-items: center;  
+  gap: 2rem;            
+  background: #1e1e1e;
   color: white;
-  padding: 0 5%;        /* dá respiro nas laterais */
+  padding: 0 5%;        
 }
 .profile {
-  border-radius: 12px; /* você pode manter redondo ou quadrado */
+  border-radius: 12px; 
   max-width: 100%;
   height: auto;
 }
 
-.footer {
-  background: #111;
-  color: white;
-  text-align: center;
-  padding: 20px;
-}
 .textoNome {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start; /* empurra pro topo */
-  align-items: center;;     /* opcional: alinha à esquerda */
-  gap: 2rem; /* espaço entre h1 e p */
-  height: 70%; /* ocupa altura da seção hero */
-  padding-top: 50px; /* ajusta o "quanto acima" vai ficar */
+  justify-content: flex-start; 
+  align-items: center;;    
+  gap: 2rem; 
+  height: 70%; 
+  padding-top: 50px; 
 }
 .textoNome p {
-  font-size: 1.2rem;  /* aumenta a fonte */
-  line-height: 1.6;   /* deixa mais espaçado e legível */
+  font-size: 1.2rem;  
+  line-height: 1.6;   
   color: #fff;       
 }
 
@@ -66,6 +60,7 @@ body {
 .projetos {
   padding: 60px 20px;
   text-align: center;
+  background:#1e1e1e;
 }
 .textAndSkillsContainer {
   display: flex;
@@ -74,7 +69,8 @@ body {
 }
 .habilidadesContainer {
   width: 100%;
-  text-align: center; 
+  text-align: center;
+  margin-top:32px; 
 }
 
 .introContainer {
@@ -82,28 +78,118 @@ body {
   align-items: center;
   justify-content: center;
   gap: 2rem;
-  flex-wrap: wrap; /* Em telas pequenas, o texto vai para baixo da foto */
-}
+  flex-wrap: wrap; 
 
-/* A "caixa" que alinha as tags de habilidade */
+}
 .habilidadesGrid {
-  display: flex;       /* Coloca as tags uma ao lado da outra */
-  justify-content: center; /* Centraliza as tags */
-  gap: 15px;           /* Espaço entre cada tag */
-  margin-top: 20px;    /* Espaço entre o título "Habilidades" e as tags */
-}
+  display: flex;       
+  justify-content: center; 
+  gap: 15px;           
+  margin-top: 20px;   
 
-/* O estilo de cada bloquinho/tag de habilidade */
+}
 .habilidadeTag {
-  background-color: #ffffff;    /* Um cinza um pouco mais claro que o fundo */
-  color: #000000;               /* Cor do texto */
-  padding: 8px 16px;         /* Espaçamento interno (para a tag não ficar grudada no texto) */
-  border-radius: 5px;        /* Deixa as bordas levemente arredondadas */
-  border: 1px solid #f8f7f7;    /* Uma borda sutil para dar um pequeno destaque */
-  font-size: 1rem;           /* Tamanho do texto */
+  background-color: #ffffff;    
+  color: #000000;               
+  padding: 8px 16px;        
+  border-radius: 5px;        
+  border: 1px solid #f8f7f7;   
+  font-size: 1rem;           
 }
 
-/* Efeito simples ao passar o mouse, só para mostrar que é clicável (ou interativo) */
 .habilidadeTag:hover {
-  background-color: #c72525; /* Escurece um pouco o fundo */
+  background-color: #ffee00; 
+}
+.projetos {
+  padding: 60px 20px;
+  background: #f9f9f9;
+  text-align: center;
+  margin-bottom:20px;
+}
+
+.projetosGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+  margin-top: 20px;
+}
+
+.projetoCard {
+  background: rgb(189, 37, 37);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: left;
+  transition: transform 0.2s ease-in-out;
+}
+.projetoCard p {
+  margin-bottom:12px;
+  text-align:justify;
+}
+.projetoCard h3 {
+  margin-top:2px;
+  margin-bottom:14px;
+}
+
+
+.projetoCard:hover {
+  transform: translateY(-5px);
+}
+
+.projetoImg {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 32px;
+}
+
+.githubLink {
+  color: #ffffff;
+  font-weight: bold;
+  text-decoration: none;
+}
+.githubLink:hover {
+  color: #0c47a1;
+  text-decoration: underline;
+}
+.contact {
+  padding: 50px 60px;
+  text-align: center;
+  background: #1e1e1e;
+  color: rgb(252, 252, 252);
+}
+
+.contact h2 {
+  font-size: 2rem;
+  margin-bottom: 24px;
+}
+
+.contactContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.contactItem {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 2rem;
+}
+
+.contactItem a {
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contactItem a:hover {
+  color: #1a73e8;
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
 }
