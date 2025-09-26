@@ -1,15 +1,34 @@
 .container {
-  text-align: center;
-  font-family: "Trebuchet MS", Arial, sans-serif;
-  background: #f74949;
-  color: #120c0c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   min-height: 100vh;
+  height: 100vh; 
+  overflow: hidden;
+  background-image: url("/ilha.jpg");
+  background-size: cover;
+  background-position: center;
   padding: 20px;
 }
+
+.gameBox {
+  background: rgba(0, 0, 0, 0.5);
+  border: 3px solid #b80000;
+  border-radius: 12px;
+  padding: 10px;
+  max-width: 600px;
+  width: 70%;
+  text-align: center;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6);
+  color: white;
+}
+
 .title {
-  font-size: 3rem;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #ffcc00;
   margin-bottom: 20px;
-  color: #000000;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
 }
 
 .forca {
@@ -22,87 +41,109 @@
   letter-spacing: 10px;
   margin: 20px 0;
   font-weight: bold;
+  color: #ffffff;
 }
 
 .status {
   font-size: 1.2rem;
-  margin: 10px 0;
+  margin: 8px 0;
+  color: #ffcc00;
+}
+
+.bold {
+  font-weight: bold;
+  color: white;
+}
+
+.errou {
+  color: #ff3333;
+  font-weight: bold;
 }
 
 .teclado {
-  margin: 20px auto;
-  max-width: 450px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  gap: 8px;
+  margin-top: 20px;
 }
 
-.teclado button {
-  margin: 5px;
-  padding: 12px;
-  width: 40px;
-  height: 40px;
-  text-transform: uppercase;
+.btn {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  border: 2px solid #ffcc00;
+  font-size: 1rem;
   font-weight: bold;
-  border: 2px solid #ffd700;
-  border-radius: 50%;
-  background-color: #949594;
-  color: white;
+  background: transparent;
+  color: #ffffff;
   cursor: pointer;
-  transition: 0.2s;
+  transition: all 0.3s;
 }
 
-.teclado button:hover:not(:disabled) {
-  background-color: #fbff00;
-  transform: scale(1.1);
+.btn:hover {
+  background: #ffcc00;
+  color: #000;
 }
 
-.teclado button:disabled {
-  background-color: #555;
-  cursor: not-allowed;
+.certa {
+  background: #008000;
+  border-color: #008000;
+  color: white;
 }
 
-.teclado button.certa {
-  background-color: #00ff6e; 
-}
-
-.teclado button.errada {
-  background-color: #ff0000;
+.errada {
+  background: #c00000;
+  border-color: #c00000;
+  color: white;
 }
 
 .mensagem {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   margin-top: 20px;
   font-weight: bold;
+  color: #ffcc00;
+  text-shadow: 1px 1px 3px black;
 }
 
 .reiniciar {
   margin-top: 20px;
-  padding: 12px 24px;
-  font-size: 1.2rem;
-  background-color: #ffd700;
-  color: black;
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
+  padding: 12px 20px;
+  font-size: 1rem;
   font-weight: bold;
+  border: 2px solid #ffcc00;
+  border-radius: 8px;
+  background: transparent;
+  color: #ffcc00;
+  cursor: pointer;
   transition: 0.3s;
 }
 
 .reiniciar:hover {
-  background-color: #daa520;
+  background: #ffcc00;
+  color: #000;
 }
 
 .topbar {
-  padding: 15px;
-  text-align: center; 
-  background-color: #f74949; 
+  position: absolute;
+  top: 10px;
+  left: 20px;
 }
 
-.voltar {
-  color: white;
-  text-decoration: none;
+.voltarBtn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 24px;
+  background: transparent;
+  color: #ffcc00;
+  border-radius: 8px;
+  border: 2px solid #ffcc00;
+  font-size: 1rem;
   font-weight: bold;
-  font-size: 1.6rem;
-  font-family: "Trebuchet MS", Arial, sans-serif;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.voltarBtn:hover {
+  background: #c00; 
 }
